@@ -1,0 +1,343 @@
+body {
+    margin: 0;
+}
+
+.wrapperBody {
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 70px auto auto 80px;
+    grid-template-areas: 
+    "header"
+    "main"
+    "picture"
+    "footer";
+}
+
+header, 
+main, 
+footer,
+.picture-area {
+    color: white;
+    font-family: Arial;
+    font-weight: bold;
+}
+
+
+.picture-area {
+    margin-bottom: 50px;
+}
+
+header {
+    margin-top: 10px;
+    background-color: white;
+    grid-area: header;
+}
+
+.topNavBar {
+    margin: 15px auto;
+}
+
+main {
+    background-color: white;
+    grid-area: main;
+    margin-top: 25px;
+    margin-bottom: 100px;
+    padding-top: 10px;
+    padding-bottom: 15px;
+}
+
+.pageIntro {
+    width: 100%;
+    height: 100px;
+    padding-top: 20px;
+    /* background-color: #ffce00; */
+    background-color: #3b83bd;
+    background-image: none;
+    background-repeat: no-repeat;
+}
+
+.pageIntro h1 {
+    color: white;
+    text-align: center;
+}
+
+/* Start of the Form */
+
+.myForm {
+    height: auto;
+    margin: 10px 10px;
+    padding: 10px 20px;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+    align-content: space-between;
+    gap: 10px;
+    font-size:smaller;
+    font-weight: lighter;
+    color: black;
+    border-left: 4px solid #ffce00;
+}
+
+.myForm input:focus {
+    border: 3px solid #555;
+  }
+
+.myForm textarea {
+    overflow: auto;
+}
+
+.formName input,
+.formEmail input,
+.formPhone input,
+.formAge input,
+.formMessage input,
+.formDate input,
+.formColor input,
+.formSite input,
+.formOwnBike input {
+    line-height: 10px;
+    width: 100%;
+    margin-top: 10px;
+}
+
+.formName,
+.formEmail,
+.formPhone,
+.formAge,
+.formMessage,
+.formDate,
+.formColor,
+.formQuestionMotor,
+.formQuestionCountry,
+.formSite,
+.formOwnBike {
+    width: 90%;
+    margin-bottom: 10px;
+}
+
+.formQuestionMotor input,
+.formQuestionCountry input {
+    margin-top: 10px;
+}
+
+.wrapperFormButton {
+    display: flex;
+    justify-content: flex-start;
+    margin-top: 10px;
+    gap: 15px;
+}
+
+.formButton {
+    background-color: black;
+    /* background-color: rgb(108, 88, 76); */
+    width: 100px;
+    height: 45px;
+    border: none;
+    color: white;
+    padding: 10px 15px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    margin: 4px 2px;
+    border-radius: 3px;
+    flex-grow: 1;
+    order: 1;
+    cursor: pointer;
+}
+
+.formButton:hover {
+    background-color: #3b83bd;
+}
+
+
+/* End of the Form */
+
+.picture-area {
+    padding-top: 50px;
+    padding-bottom: 75px;
+    background-color: white;
+    grid-area: picture;
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.textPictureArea {
+    display: none;
+    visibility: hidden;
+}
+
+footer {
+    background-color: #999;
+    grid-area: footer;
+    padding-left: 40%;
+    padding-right: 50%;
+    padding-top: 10px;
+}
+
+img { 
+    width: 100%;
+    display: block;
+    margin: auto 0px
+}
+
+.motorPictures {
+    margin-top: 25px;
+    margin-bottom: 75px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.wrapperSmallPicture {
+    width: 33.3%;
+    height: auto;
+    margin: 0px auto;
+}
+
+.wrapperSmallPicture p {
+    text-align: center;
+    font-style: italic;
+    font-weight: lighter;
+}
+
+.smallImg01 {
+    grid-area: "pic1";
+}
+
+.smallImgSide {
+    width: 100%;
+    height: 150px;
+}
+
+
+
+
+/* Start of profiles */
+.profileName {
+    margin-top: 75px;
+    margin-bottom: 150px;
+}
+
+.profileName h2 {
+    text-align: center;
+}
+
+.profileName h4 {
+    text-align: center;
+}
+
+.profileName p {
+    text-align: center;
+    font-size: smaller;
+}
+
+.profileName01 {
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+
+
+/* Navbar CSS */
+ul {
+    margin: 2px;
+}
+
+ul li {
+    list-style: none;
+    display: inline-block;
+    margin-right: 9px;
+}
+
+ul li a {
+    text-decoration: none;
+}
+
+.navBarButton {
+    background-color: black;
+    border: none;
+    color: white;
+    padding: 10px 15px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.navBarButton:hover {
+    background-color: #ffce00;
+}
+
+/* Text CSS */
+h1, h2, h3, h4, h5 {
+    font-weight: bolder;
+    text-align: left;
+    margin-left: 40px;
+    color: #333;
+}
+
+h1 {
+    font-size: xx-large;
+}
+
+h3 {
+    font-size: larger;
+}
+
+h4 {
+    font-size: medium;
+}
+
+h5 /* text Sub heading */ {
+    font-size: small;
+    font-weight: bold;
+    /* font-style: italic; */
+}
+
+main p{
+    font-weight: normal;
+    text-align: left;
+    padding-left: 40px;
+    padding-right: 40px;
+}
+
+p {
+    padding: 15px;
+    line-height: 1.8em;
+    color: black;
+    font-size: small;
+}
+
+.textSub {
+    padding-left: 25px;
+    font-size: x-small;
+    font-weight: lighter;
+    font-style: italic;
+}
+
+blockquote {
+    color: black;
+    margin-left: 75px;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    padding-left: 20px;
+    padding-right: 50px;
+    line-height: 1.7em;
+    font-size: large;
+    font-weight: 2.5em;
+    font-style: italic;
+    text-align: center;
+    border-left: 4px solid #ffce00;
+}
+
+hr {
+    width: 2.5%;
+    margin-bottom: 200px;
+    border: 2px solid #3b83bd;
+}

@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="style.css" rel="stylesheet">
+    <link href="tabletscreen.css" rel="stylesheet" media="screen and (min-width: 768px)">
+    <link href="widescreen.css" rel="stylesheet" media="screen and (min-width: 1248px)">
+    <title>The site for CSS Grid | Contact</title>
+</head>
+
+<body>
+    <div class="wrapperBody">
+        <header>
+            <div class="topNavBar">
+                <nav>
+                    <ul>
+                        <li> <a href="index.html" class="navBarButton" title="Home"> Home </a> </li>
+                        <li> <a href="photos.html" class="navBarButton" title="Photo's"> Photo's </a> </li>
+                        <li> <a href="about.html" class="navBarButton" title="About"> About </a> </li>
+                        <li> <a href="contact.html" class="navBarButton" title="Contact"> Contact </a> </li>
+                        <li> <a href="maps.html" class="navBarButton" title="Maps"> Maps </a> </li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+
+        <main>
+            <div class="pageIntro">
+                <h1>Please keep us up-to-date</h1>
+            </div>
+            
+            <p>
+                Here will come some information. All about the motorcycle's there are.
+                <br>
+                <br>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
+                <br>
+                <br>
+                Nulla nesciunt eos dicta at sit asperiores quisquam magni beatae facere natus obcaecati dolor, 
+                voluptatem fuga optio hic delectus porro non blanditiis.
+            </p>
+
+            <div class="wrapperForm">
+                <form class="myForm" name="contact" method="POST" data-netlify="true">
+                    <div class="formName">
+                        <label for="name">Naam:*</label>
+                        <input type="text" name="name" required="yes">
+                    </div>
+                    
+                    <div class="formEmail">
+                        <label for="email">Email:*</label>
+                        <input type="text" name="email" required="yes">
+                    </div>
+                    
+                    <div class="formPhone">
+                        <label for="phone">Tel nummer:*</label>
+                        <input type="tel" name="phone">
+                    </div>
+
+                    <div class="formAge">
+                        <label for="age">Leeftijd:</label>
+                        <input type="number" name="age">
+                    </div>
+                    <div class="formMessage">
+                        <label for="message">Open bericht: *</label><br>
+                        <textarea name="message" cols="50" rows="10"> </textarea>
+                    </div>
+                    <div class="formDate">
+                        <label for="dateofbirth">Geboorte datum:</label>
+                        <input type="date" name="dateofbirth">
+                    </div>
+
+                    <div class="formColor">
+                        <label for="color">Welke kleur heeft jouw motor:</label>
+                        <input type="color" id="favcolor" name="favcolor">
+                    </div>
+
+                    <div class="formQuestionMotor">
+                        <label for="welke_motor">Welk merk motor rij je zelf:</label>
+                        <br>
+                            <input type="radio" id="bmw" name="welke_motor" value="BMW"> BMW
+                            <input type="radio" id="honda" name="welke_motor" value="Honda"> Honda
+                            <input type="radio" id="triumph" name="welke_motor" value="Triumph"> Triumph
+                            <input type="radio" id="roalenfield" name="welke_motor" value="Roal_Enfield"> Royal Enfield
+                    </div>
+
+                    <div class="formQuestionCountry">
+                        <label for="welke_motor">In welk land zou je graag een route willen rijden:</label>
+                            <br>
+                            <input type="checkbox" id="noorwegen" name="welk_land" value="Noorgwegen">Noorwegen
+                            <input type="checkbox" id="belgie" name="welk_land" value="Belgie">Belgie
+                            <input type="checkbox" id="duitsland" name="welk_land" value="Duitsland">Duitsland
+                            <input type="checkbox" id="nieuwzeeland" name="welk_land" value="Nieuw_Zeeland">Nieuw Zeeland
+                    </div>
+
+                    <div class="formSite">
+                        <label for="ownsite">Heb jij een eigen site?</label>
+                        <input type="url" id="url" name="ownsite">
+                    </div>
+
+                    <div class="formOwnBike">
+                        <label for="ownmotorbike">Stuur een foto van je eigen motor:</label>
+                        <input type="file" id="ownbike" name="ownmotorbike">
+                    </div>
+
+                    <div class="wrapperFormButton">
+                        <input class="formButton" type="submit" value="Zenden" name="send" onclick="alert('Bedankt voor het invullen van deze feedback!')">
+                        <input class="formButton" type="reset" value="Reset" name="reset" onclick="alert('Alles is weer gerest voor je')">
+                    </div>
+                </form>
+            </div> <!-- End of the form Div -->
+
+        </main>
+
+        <div class="picture-area">
+            <div class="textPictureArea">
+                <p>
+                    This text wil not appear when the size is not full-screen.
+                </p>
+            </div>
+            
+            <div class="wrapperSmallPicture">
+                <img class="smallImgSide" src="/Links/420px-BMW_F800R_Chris_Pfeiffer_special_edition.jpeg" alt="BMW Sports">
+            </div>
+            <div class="wrapperSmallPicture">
+                <img class="smallImgSide" src="/Links/420px-BMW_F_800_GS_Ausführung_2008_Deutschland.jpeg" alt="BMW Sports">
+            </div>
+            <div class="wrapperSmallPicture">
+                <img class="smallImgSide" src="/Links/420px-BMW_F650GS_twin.jpeg" alt="BMW Sports">
+            </div>
+            <div class="wrapperSmallPicture">
+                <img class="smallImgSide" src="/Links/420px-BMW_F_800_S.jpeg" alt="BMW Sports">
+            </div>
+            <div class="wrapperSmallPicture">
+                <img class="smallImgSide" src="/Links/420px-BMW_F_800_Sport_Edition_1.jpeg" alt="BMW Sports">
+            </div>
+            <div class="wrapperSmallPicture">
+                <img class="smallImgSide" src="/Links/420px-BMW_F_800_Sport_Edition_1.jpeg" alt="BMW Sports">
+            </div>
+
+        </div> <!-- End of widget area -->
+
+        <footer>
+            <ul>
+                <li> <a href="index.html" class="navBarButton" title="Home"> Home </a> </li>
+            </ul>
+        </footer>
+
+    </div>
+</body>
+
+</html>
